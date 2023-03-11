@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-size: smaller;
+  background-color: aliceblue;
+}
+.innerContainer{
+  background-color: rgb(211, 234, 255);
+  padding: 1rem;
+  border-radius: 12px;
+  width: 40%;
+  height: 15%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap:5px;
+  margin: 5px;
+}
+.input label{
+  color: rgb(1, 70, 70);
+  font-size:11px ;
+  margin-left: 8px;
+}
+.input input{
+  border-radius: 12px;
+  border: 0;
+  padding: 6px;
+}
+.input input::placeholder{
+ font-size: 11px;
+}
+.input input:focus{
+ outline: thin;
+ border: 1 solid rgb(0, 174, 255);
+
+}
+
+.btn{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.btn button{
+  border: none;
+  background-color: rgb(105, 222, 243);
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 12px;
+  color: rgb(2, 32, 58);
+}
+.btn button:hover{
+  color: aliceblue;
+  background-color: rgb(3, 80, 104);
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (max-width: 480px) {
+  .innerContainer{
+    width: 80%;
+    height: 20%;
   }
 }
