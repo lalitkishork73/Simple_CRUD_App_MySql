@@ -1,5 +1,6 @@
 .container{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100vw;
@@ -8,6 +9,7 @@
   background-color: aliceblue;
 }
 .innerContainer{
+
   background-color: rgb(211, 234, 255);
   padding: 1rem;
   border-radius: 12px;
@@ -55,6 +57,20 @@
 .btn button:hover{
   color: aliceblue;
   background-color: rgb(3, 80, 104);
+}
+
+.table{
+  width: 45%;
+  margin-top: 15px;
+  border: 1px solid skyblue;
+  border-radius: 12px;
+  padding: 2px;
+  
+}
+
+.tab-body tr td{
+  text-align: center;
+
 }
 
 
