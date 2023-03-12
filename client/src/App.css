@@ -65,12 +65,25 @@
   border: 1px solid skyblue;
   border-radius: 12px;
   padding: 2px;
-  
+  font-size: small;
+
+}
+.tab-head{
+  background-color: skyblue;
+  padding: 5px;
+  border-top-left-radius: 12px;
+  border: 1px solid skyblue;
 }
 
 .tab-body tr td{
   text-align: center;
-
+}
+.tab-body tr td button{
+  border:0;
+  background-color: rgb(255, 0, 0);
+  color: aliceblue;
+  padding: 3px;
+  border-radius: 8px;
 }
 
 
@@ -78,5 +91,8 @@
   .innerContainer{
     width: 80%;
     height: 20%;
+  }
+  .table{
+    width: 80%;
   }
 }

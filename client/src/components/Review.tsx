@@ -19,7 +19,7 @@ const Review = () => {
         try {
             const response = await axios.post(`create`,data);
             if(response.status==201){
-                setFormData({...setFormData, movieName:'', movieReview:''});
+                setFormData({...formdata, movieName:'', movieReview:''});
             }
 
         }catch(err) {
